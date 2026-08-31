@@ -1,0 +1,98 @@
+@font-face {
+  font-display: swap;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  src: url("fonts/inter-v20-latin-regular.woff2") format("woff2");
+}
+@font-face {
+  font-display: swap;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  src: url("fonts/inter-v20-latin-500.woff2") format("woff2");
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: var(--blue-700);
+  color: var(--white);
+  font-family: var(--main-font);
+}
+img {
+  max-width: 100%;
+  display: block;
+}
+button {
+  background-color: transparent;
+  font-family: inherit;
+  border: none;
+  cursor: pointer;
+}
+:root {
+  --white: hsl(0, 0%, 100%);
+  --blue-200: hsl(224, 100%, 95%);
+  --blue-400: hsl(220, 100%, 64%);
+  --blue-600: hsl(228, 100%, 60%);
+  --blue-700: hsl(228, 99%, 58%);
+  --black: hsl(0, 0%, 0%);
+  --overlay-menu: hsl(0, 0%, 0%, 0.25);
+  --main-font: "inter", sans-serif;
+  --font-regular: 400;
+  --font-500: 500;
+  --sm-font-size: 0.875rem;
+  --main-font-size: 1.0625rem;
+  --sm-gap: 0.4rem;
+  --space-container: clamp(1.5rem, 0.972rem + 2.254vw, 3rem);
+  --space-topbar-y: clamp(1.25rem, 1.162rem + 0.376vw, 1.5rem);
+  --space-stack: clamp(1rem, 0.736rem + 1.127vw, 1.75rem);
+  --space-section: clamp(2rem, 1.472rem + 2.254vw, 3.5rem);
+  --space-nav-gap: clamp(2.75rem, 2.53rem + 0.939vw, 3.375rem);
+}
+
+.container {
+  padding-inline: var(--space-container);
+  max-width: 90rem;
+  margin-inline: auto;
+}
+header {
+  padding-block: var(--space-stack);
+  border-bottom: 1px solid var(--blue-400);
+}
+.header-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.hamburger-button {
+  width: 20px;
+  height: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+.hamburger-button span {
+  width: 100%;
+  height: 2px;
+  display: block;
+  background-color: var(--white);
+  border-radius: 2px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: var(--sm-gap);
+  font-size: var(--sm-font-size);
+  font-weight: var(--font-regular);
+}
+.logo span {
+  background-color: var(--white);
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+}
