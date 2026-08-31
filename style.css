@@ -186,8 +186,11 @@ header {
   position: absolute;
   top: 0;
   z-index: 1;
-  transition: opacity var(--main-transition);
+  visibility: hidden;
+  transition: opacity var(--main-transition),
+  visibility var(--main-transition);
 }
 .nav-overlay.active {
   opacity: 1;
+  visibility: visible;
 }
