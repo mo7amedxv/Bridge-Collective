@@ -45,7 +45,6 @@ body {
   background-color: var(--blue-700);
   color: var(--white);
   font-family: var(--main-font);
-  min-height: 100vh;
 }
 img {
   max-width: 100%;
