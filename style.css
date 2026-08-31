@@ -34,6 +34,7 @@
   --space-section: clamp(2rem, 1.472rem + 2.254vw, 3.5rem);
   --space-nav-gap: clamp(2.75rem, 2.53rem + 0.939vw, 3.375rem);
   --main-transition: 0.3s ease;
+  --long-transition: 0.5s ease;
 }
 * {
   margin: 0;
@@ -70,6 +71,7 @@ header {
   padding-block: var(--space-stack);
   border-bottom: 1px solid var(--blue-400);
   position: relative;
+  background-color: var(--blue-700);
   z-index: 50;
 }
 .header-container {
@@ -115,7 +117,6 @@ header {
 
 .main-nav-wrapper {
   position: relative;
-  padding: var(--space-container);
   height: 100%;
 }
 .nav-link {
@@ -140,12 +141,13 @@ header {
   align-items: center;
   text-align: center;
   transition:
-  transform var(--main-transition),
+    transform var(--main-transition),
     visibility var(--main-transition),
     opacity var(--main-transition);
   opacity: 0;
   visibility: hidden;
   transform: translateY(-10px);
+  z-index: 49;
 }
 .nav-link.active {
   color: var(--muted);
@@ -175,4 +177,17 @@ header {
   opacity: 1;
   visibility: visible;
   transform: translateY(0px);
+}
+.nav-overlay {
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  background-color: var(--overlay-menu);
+  position: absolute;
+  top: 0;
+  z-index: 1;
+  transition: opacity var(--main-transition);
+}
+.nav-overlay.active {
+  opacity: 1;
 }
