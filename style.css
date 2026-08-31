@@ -45,6 +45,7 @@ body {
   background-color: var(--blue-700);
   color: var(--white);
   font-family: var(--main-font);
+  min-height: 100vh;
 }
 img {
   max-width: 100%;
@@ -73,9 +74,13 @@ header {
   position: relative;
   background-color: var(--blue-700);
   z-index: 50;
+  align-items: center;
+  display: flex;
+  height: 70px;
 }
 .header-container {
   display: flex;
+  width: 100%;
   align-items: center;
   justify-content: space-between;
 }
@@ -114,11 +119,6 @@ header {
   height: 10px;
   border-radius: 50%;
 }
-
-.main-nav-wrapper {
-  position: relative;
-  height: 100%;
-}
 .nav-link {
   font-size: var(--main-font-size);
   position: relative;
@@ -135,8 +135,7 @@ header {
   padding: var(--space-topbar-y);
   background-color: var(--blue-700);
   width: 100%;
-  top: 0.1%;
-  inset-inline-start: 0;
+  top: 68px;
   gap: var(--main-gap);
   align-items: center;
   text-align: center;
@@ -146,7 +145,7 @@ header {
     opacity var(--main-transition);
   opacity: 0;
   visibility: hidden;
-  transform: translateY(-10px);
+
   z-index: 49;
 }
 .nav-link.active {
@@ -167,10 +166,21 @@ header {
   .nav-link.active::after {
     background-color: var(--muted);
   }
+  .header-nav {
+    width: 30%;
+    height: calc(100% - 68px);
+    inset-inline-end: 0;
+    align-items: end;
+  }
 }
 @media (hover: hover) {
   .nav-link:hover::after {
     width: 100%;
+  }
+}
+@media (max-width: 768px) {
+  .header-nav {
+    transform: translateY(-10px);
   }
 }
 .header-nav.opened {
@@ -187,8 +197,9 @@ header {
   top: 0;
   z-index: 1;
   visibility: hidden;
-  transition: opacity var(--main-transition),
-  visibility var(--main-transition);
+  transition:
+    opacity var(--main-transition),
+    visibility var(--main-transition);
 }
 .nav-overlay.active {
   opacity: 1;
