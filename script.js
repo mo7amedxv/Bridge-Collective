@@ -5,4 +5,8 @@ navBtn.addEventListener("click", () => {
   navBtn.classList.toggle("active");
   mainNav.classList.toggle("opened");
   navOverlay.classList.toggle("active");
+  document.querySelector("body").classList.toggle("has-active-menu");
+});
+navOverlay.addEventListener("click", () => {
+  navBtn.click();
 });
