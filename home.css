@@ -27,9 +27,17 @@
   --leading-heading: 1.05;
   --leading-body: 1.6;
 }
-
+.hero,
+.hero-container {
+  height: 100%;
+}
+body {
+  height: 100vh;
+}
 .hero-container {
   display: grid;
+  gap: var(--space-stack);
+  padding: 0;
 }
 .hero-heading {
   font-family: var(--main-font);
@@ -80,8 +88,17 @@
 .hero-stat {
   padding: var(--space-stack);
   border: 1px solid var(--blue-400);
-  min-height: 300px;
+  min-height: 200px;
+  transition: background-color var(--long-transition);
 }
+@media (max-width: 40rem) {
+  .hero-stat {
+    min-height: 300px;
+    border-left: none;
+    border-right: none;
+  }
+}
+
 .hero-stat-top {
   display: flex;
   align-items: flex-start;
@@ -102,4 +119,38 @@
   display: grid;
   height: 100%;
   grid-template-rows: 1fr auto;
+}
+.footer-legal {
+  border-top: 1px solid var(--blue-400);
+  height: 70px;
+  display: flex;
+  align-items: center;
+}
+.footer-container {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+  color: var(--muted);
+  font-size: var(--sm-font-size);
+  flex-wrap: wrap;
+}
+
+.hero-text {
+  padding: var(--space-container);
+}
+.content-wrapper {
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  height: 100%;
+  overflow-y: auto;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+.content-wrapper::-webkit-scrollbar {
+  display: none;
+}
+.hero-stat:hover {
+  background-color: var(--blue-600);
+  cursor: pointer;
 }

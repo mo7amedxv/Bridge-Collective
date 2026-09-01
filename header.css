@@ -158,18 +158,18 @@ header {
     transform: translateY(-100px);
   }
 }
-@media (min-width: 48.0625rem) {
-  .nav-link::after {
-    width: 0%;
-    transition: width var(--main-transition);
-    transition-delay: 0.1s;
-    height: 2px;
-    position: absolute;
-    content: "";
-    background-color: var(--white);
-    bottom: -3px;
-    border-radius: 2px;
-  }
+.nav-link::after {
+  width: 0%;
+  transition: width var(--main-transition);
+  transition-delay: 0.1s;
+  height: 2px;
+  position: absolute;
+  content: "";
+  background-color: var(--white);
+  bottom: -3px;
+  border-radius: 2px;
+}
+@media (min-width: 48rem) {
   .nav-link.active::after {
     background-color: var(--muted);
   }
