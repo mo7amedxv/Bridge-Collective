@@ -9,50 +9,165 @@
       sizes="32x32"
       href="assets/images/favicon-32x32.png"
     />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="header.css" />
+    <link rel="stylesheet" href="home.css" />
     <title>Bridge Collective</title>
   </head>
-  <body class=""> 
-    <header>
-      <div class="container header-container">
-        <a href="#" class="logo">
-          <span></span>
-          Bridge Collective
-        </a>
-        <button
-          type="button"
-          class="hamburger-button"
-          aria-label="Open menu"
-          aria-expanded="false"
-          aria-controls="site-nav"
-        >
-          <span></span>
-          <span></span>
-        </button>
-      </div>
-    </header>
-    <nav class="header-nav" aria-label="Main navigation">
+  <body>
+    <div class="content-wrapper">
+      <header>
+        <div class="container header-container">
+          <a href="#" class="logo">
+            <span></span>
+            Bridge Collective
+          </a>
+          <button
+            type="button"
+            class="hamburger-button"
+            aria-label="Open menu"
+            aria-expanded="false"
+            aria-controls="site-nav"
+          >
+            <span></span>
+            <span></span>
+          </button>
+        </div>
+      </header>
+      <nav class="header-nav" aria-label="Main navigation">
         <a href="#" aria-current="page" class="nav-link active">Home</a>
         <a href="/about/" class="nav-link">About</a>
         <a href="/work/" class="nav-link">Our Work</a>
         <a href="/partners/" class="nav-link">Partners</a>
         <a href="/report/" class="nav-link">Annual Report</a>
         <a href="#" class="nav-link">Donate</a>
-    </nav>
-    <div class="nav-overlay" aria-hidden="true"></div>
-    <!-- Hero -->
-    A classroom for every child. We fund the schools, train the teachers, and
-    measure what works — so every child we reach today becomes a graduate
-    tomorrow.
-
-    <!-- Stats -->
-    2.4M Students reached Across 31 countries since 2011. 1,284 Schools
-    partnered In 14 countries, from Kenya to Guatemala. 38K Teachers trained
-    Equipped with modern tools and methodology. 3.1× Graduation lift Partner
-    schools outperform national averages 3x.
-
-    <!-- Footer -->
-    © 2026 Bridge Collective Registered charity 12345678
+      </nav>
+      <div class="nav-overlay" aria-hidden="true"></div>
+      <main>
+        <section class="hero">
+          <div class="container hero-container">
+            <div class="hero-text">
+              <h1 class="hero-heading">A classroom for every child.</h1>
+              <div class="hero-subtitle">
+                We fund the schools, train the teachers, and measure what works
+                — so every child we reach today becomes a graduate tomorrow.
+              </div>
+            </div>
+            <div class="hero-stats-grid">
+              <div class="hero-stat">
+                <dl class="hero-stat-dl">
+                  <div class="hero-stat-top">
+                    <svg
+                      class="hero-stat-icon"
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 32 32"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      aria-hidden="true"
+                    >
+                      <path
+                        d="M14.69 3.752a1.334 1.334 0 0 1 2.62 0l1.402 7.41a2.67 2.67 0 0 0 2.125 2.126l7.411 1.401a1.334 1.334 0 0 1 0 2.622l-7.41 1.401a2.67 2.67 0 0 0-2.126 2.125l-1.401 7.411a1.334 1.334 0 0 1-2.622 0l-1.4-7.41a2.67 2.67 0 0 0-2.126-2.126l-7.41-1.401a1.334 1.334 0 0 1 0-2.622l7.41-1.401a2.67 2.67 0 0 0 2.125-2.125z"
+                      />
+                    </svg>
+                    <dt class="hero-stat-value" aria-label="2.4 million">
+                      2.4M
+                    </dt>
+                  </div>
+                  <dd class="hero-stat-label">Students reached</dd>
+                  <dd class="hero-stat-desc">
+                    Across 31 countries since 2011.
+                  </dd>
+                </dl>
+              </div>
+              <div class="hero-stat">
+                <dl class="hero-stat-dl">
+                  <div class="hero-stat-top">
+                    <svg
+                      class="hero-stat-icon"
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 32 32"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      aria-hidden="true"
+                    >
+                      <path d="M6.667 16h18.666M16 6.667v18.666" />
+                    </svg>
+                    <dt class="hero-stat-value">1,284</dt>
+                  </div>
+                  <dd class="hero-stat-label">Schools partnered</dd>
+                  <dd class="hero-stat-desc">
+                    In 14 countries, from Kenya to Guatemala.
+                  </dd>
+                </dl>
+              </div>
+              <div class="hero-stat">
+                <dl class="hero-stat-dl">
+                  <div class="hero-stat-top">
+                    <svg
+                      class="hero-stat-icon"
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 32 32"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      aria-hidden="true"
+                    >
+                      <path d="M6.667 16h18.666M16 6.667 25.333 16 16 25.333" />
+                    </svg>
+                    <dt class="hero-stat-value">38K</dt>
+                  </div>
+                  <dd class="hero-stat-label">Teachers trained</dd>
+                  <dd class="hero-stat-desc">
+                    Equipped with modern tools and methodology.
+                  </dd>
+                </dl>
+              </div>
+              <div class="hero-stat">
+                <dl class="hero-stat-dl">
+                  <div class="hero-stat-top">
+                    <svg
+                      class="hero-stat-icon"
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 32 32"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      aria-hidden="true"
+                    >
+                      <path
+                        d="M21.334 9.333h8v8M29.333 9.333 18 20.667 11.333 14l-8.666 8.667"
+                      />
+                    </svg>
+                    <dt class="hero-stat-value" aria-label="3.1 times">3.1×</dt>
+                  </div>
+                  <dd class="hero-stat-label">Graduation lift</dd>
+                  <dd class="hero-stat-desc">
+                    Partner schools outperform national averages 3x.
+                  </dd>
+                </dl>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+      <footer class="footer-legal">
+        <div class="container footer-container">
+          <p class="footer-copyright">
+            © <time datetime="2026">2026</time> Bridge Collective
+          </p>
+          <p class="footer-charity-info">Registered charity 12345678</p>
+        </div>
+      </footer>
+    </div>
     <script src="script.js" defer></script>
   </body>
 </html>

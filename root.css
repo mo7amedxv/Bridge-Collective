@@ -1,0 +1,24 @@
+:root {
+  --white: hsl(0, 0%, 100%);
+  --muted: hsl(0, 0%, 85%);
+  --blue-200: hsl(224, 100%, 95%);
+  --blue-400: hsl(220, 100%, 64%);
+  --blue-600: hsl(228, 100%, 60%);
+  --blue-700: hsl(228, 99%, 58%);
+  --black: hsl(0, 0%, 0%);
+  --overlay-menu: hsl(0, 0%, 0%, 0.25);
+  --main-font: "inter", sans-serif;
+  --font-regular: 400;
+  --font-500: 500;
+  --sm-font-size: 0.875rem;
+  --main-font-size: 1.0625rem;
+  --sm-gap: 0.4rem;
+  --main-gap: 0.8rem;
+  --space-container: clamp(1.5rem, 0.972rem + 2.254vw, 3rem);
+  --space-topbar-y: clamp(1.25rem, 1.162rem + 0.376vw, 1.5rem);
+  --space-stack: clamp(1rem, 0.736rem + 1.127vw, 1.75rem);
+  --space-section: clamp(2rem, 1.472rem + 2.254vw, 3.5rem);
+  --space-nav-gap: clamp(2.75rem, 2.53rem + 0.939vw, 3.375rem);
+  --main-transition: 0.3s ease;
+  --long-transition: 0.5s ease;
+}
